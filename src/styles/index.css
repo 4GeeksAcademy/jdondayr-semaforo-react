@@ -1,13 +1,20 @@
-.container {
+.container, .traffic-lights-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+}
+.container {gap: 1rem;}
+
+.stick {
+    height: 5rem;
+    width: 2rem;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .traffic-lights {
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,13 +23,15 @@
     gap: 5px;
     background-color: black;
     width: 10rem;
-    height: 25rem;
+    height: fit-content;
+    padding: 10px
 }
 
 .light {
     height: 7rem;
     width: 7rem;
     border-radius: 100%;
+    border: none;
 }
 
 .button {
